@@ -53,7 +53,8 @@ CREATE TABLE `tablevehicles` (
     `CrashSensor` int(11) DEFAULT NULL,
     `LeatherSeats` int(11) DEFAULT NULL,
     `RegDate` timestamp NOT NULL DEFAULT current_timestamp(),
-    `UpdationDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
+    `UpdationDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp(),
+    `status` tinyint(1) NOT NULL DEFAULT 1 COMMENT '1=Active | 0=Inactive'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
