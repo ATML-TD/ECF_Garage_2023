@@ -11,23 +11,19 @@ if (isset($_POST["action"])) {
         $query .= "
     AND PricePerDay BETWEEN '" . $_POST["minimum_price"] . "' AND '" . $_POST["maximum_price"] . "'
     ";
-    echo("price");
     }
 
     if (isset($_POST["minimum_km"], $_POST["maximum_km"]) && !empty($_POST["minimum_km"]) && !empty($_POST["maximum_km"])) {
         $query .= "
     AND PricePerDay BETWEEN '" . $_POST["minimum_km"] . "' AND '" . $_POST["maximum_km"] . "'
     ";
-    echo("km");
     }
 
     if (isset($_POST["minimum_year"], $_POST["maximum_year"]) && !empty($_POST["minimum_year"]) && !empty($_POST["maximum_year"])) {
         $query .= "
-    AND PricePerDay BETWEEN '" . $_POST["minimum_year"] . "' AND '" . $_POST["maximum_year"] . "'
+    AND ModelYear BETWEEN '" . $_POST["minimum_year"] . "' AND '" . $_POST["maximum_year"] . "'
     ";
-    echo("year");
     }
-    echo($query);
     $statement = $pdo->prepare($query);
     $statement->execute();
     $result = $statement->fetchAll();
