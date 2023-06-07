@@ -18,9 +18,6 @@ error_reporting(0);
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-3.7.0.js"></script> 
     <script src="//code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>-->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>-->
-    
 
 </head>
 
