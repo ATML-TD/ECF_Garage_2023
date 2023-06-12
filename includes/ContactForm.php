@@ -64,7 +64,7 @@ $success = mail($EmailTo, $Subject, $Body, "De la part de:" . $email);
 
 // redirect to success page
 if ($success && $errorMSG == "") {
-    echo "success";
+    echo "Tout est bon!";
 } else {
     if ($errorMSG == "") {
         echo "Un problème est survenu :(";
