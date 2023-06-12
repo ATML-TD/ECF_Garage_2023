@@ -4,7 +4,7 @@
     $username = 'root';
     $password = '';
     $dbname = 'garageparrot';
-
+    
     try {
         $pdo = new PDO("mysql:hots=$host;dbname=$dbname", $username, $password);
     }

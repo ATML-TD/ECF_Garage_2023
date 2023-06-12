@@ -25,6 +25,7 @@ error_reporting(0);
 
     <!-- START header -->
     <?php include('includes/Header.php'); ?>
+    <?php include('includes/ContactForm.php'); ?>
     <!-- END header -->
 
     <main>

@@ -29,28 +29,47 @@ error_reporting(0);
 
     <?php
     $id = $_GET['id'];
-    $sql = "SELECT * FROM tablevehicles WHERE id=:id";
+    $sql = "SELECT * FROM tabcars WHERE id=:id";
     $query = $pdo->prepare($sql);
     $query->bindParam(':id', $id);
     $query->execute();
     $result = $query->fetch();
     ?>
 
+    <section class=flux>
+        <div>
+            <img src="assets/images/<?php echo htmlentities($result["CarsImage1"]);?>" class="img-responsive" alt="image" width="900" height="560">
+        </div>
+        <div>
+            <img src="assets/images/<?php echo htmlentities($result["CarsImage2"]);?>" class="img-responsive" alt="image" width="900" height="560">
+        </div>
+        <div>
+            <img src="assets/images/<?php echo htmlentities($result["CarsImage3"]);?>" class="img-responsive" alt="image" width="900" height="560">
+        </div>
+        <div>
+            <img src="assets/images/<?php echo htmlentities($result["CarsImage4"]);?>" class="img-responsive" alt="image" width="900" height="560">
+        </div>
+        <div>
+            <img src="assets/images/<?php echo htmlentities($result["CarsImage5"]);?>" class="img-responsive" alt="image" width="900" height="560">
+        </div>
+    </section>
+
+    <!-- Car details -->
     <section class="flux">
-        <h2><?php echo htmlentities($result["VehiclesTitle"]); ?></h2>
+        <h2><?php echo htmlentities($result["CarsName"]); ?></h2>
         <div class="container">
             <div class="row">
                 <div class="col">
                     <i class="fas fa-euro-sign"></i>
-                    <h5><?php echo htmlentities($result["PricePerDay"]); ?></h5>
+                    <h5><?php echo htmlentities($result["CarsPrice"]); ?></h5>
                 </div>
                 <div class="col">
                     <i class="fas fa-calendar"></i>
-                    <h5><?php echo htmlentities($result["ModelYear"]); ?></h5>
+                    <h5><?php echo htmlentities($result["CarsYear"]); ?></h5>
                 </div>
                 <div class="col">
                     <i class="fas fa-car"></i>
-                    <h5><?php echo htmlentities($result["FuelType"]); ?></h5>
+                    <h5><?php echo htmlentities($result["CarsKM"]); ?></h5>
                 </div>
             </div>
         </div>
@@ -63,7 +82,7 @@ error_reporting(0);
         </nav>
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <p class=text-paragraph><?php echo htmlentities($result["VehiclesOverview"]); ?></p>
+                <p class=text-paragraph><?php echo htmlentities($result["CarsDescription"]); ?></p>
             </div>
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <table class="table">
@@ -74,9 +93,15 @@ error_reporting(0);
                         </tr>
                     </thead>
                     <tbody>
+                        <th scope="row">Nombre de sièges</th>
+                            <td><?php echo($result["CarsSeat"])?></td>
+                        </tr>
+                        <th scope="row">Type de voiture</th>
+                            <td><?php echo($result["CarsType"])?></td>
+                        </tr>
                         <tr>
                             <th scope="row">Climatisation</th>
-                            <?php if ($result["AirConditioner"] == 1) {
+                            <?php if ($result["CarsAC"] == 1) {
                             ?>
                                 <td>oui</td>
                             <?php } else { ?>
@@ -84,7 +109,16 @@ error_reporting(0);
                             <?php } ?>
                         </tr>
                         <tr>
-                            <th scope="row">Lecteur CD</th>
+                            <th scope="row">Bluetooth</th>
+                            <?php if ($result["CDPlayer"] == 1) {
+                            ?>
+                                <td>oui</td>
+                            <?php } else { ?>
+                                <td>non</td>
+                            <?php } ?>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lumière automatique</th>
                             <?php if ($result["CDPlayer"] == 1) {
                             ?>
                                 <td>oui</td>
@@ -97,6 +131,7 @@ error_reporting(0);
             </div>
         </div>
     </section>
+    <!-- /Car details -->
     <!--/OVERVIEW-->
 
     <!-- Footer -->
