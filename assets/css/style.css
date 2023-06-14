@@ -91,6 +91,15 @@ Header
     margin-bottom: 50px;
 }
 
+.admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    background: #6C6C6C;
+}
 
 .nav-link {
     font-family: QuattrocentoRegular;

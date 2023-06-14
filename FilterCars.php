@@ -36,7 +36,7 @@ if (isset($_POST["action"])) {
         <div class="product-grid">
             <div class="product-content">
                 <div class="card" style="width: 20rem;">
-                    <img src="assets/images/' . $row['CarsImage1'] . '" class="img-responsive" alt="Image"/>
+                    <img src="admin/assets/images/' . $row['CarsImage1'] . '" class="img-responsive" alt="Image"/>
                     <h3 class="title">' . $row['CarsName'] . '</h3>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">

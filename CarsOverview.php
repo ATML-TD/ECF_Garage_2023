@@ -36,24 +36,6 @@ error_reporting(0);
     $result = $query->fetch();
     ?>
 
-    <section class=flux>
-        <div>
-            <img src="assets/images/<?php echo htmlentities($result["CarsImage1"]);?>" class="img-responsive" alt="image" width="900" height="560">
-        </div>
-        <div>
-            <img src="assets/images/<?php echo htmlentities($result["CarsImage2"]);?>" class="img-responsive" alt="image" width="900" height="560">
-        </div>
-        <div>
-            <img src="assets/images/<?php echo htmlentities($result["CarsImage3"]);?>" class="img-responsive" alt="image" width="900" height="560">
-        </div>
-        <div>
-            <img src="assets/images/<?php echo htmlentities($result["CarsImage4"]);?>" class="img-responsive" alt="image" width="900" height="560">
-        </div>
-        <div>
-            <img src="assets/images/<?php echo htmlentities($result["CarsImage5"]);?>" class="img-responsive" alt="image" width="900" height="560">
-        </div>
-    </section>
-
     <!-- Car details -->
     <section class="flux">
         <h2><?php echo htmlentities($result["CarsName"]); ?></h2>
@@ -94,10 +76,10 @@ error_reporting(0);
                     </thead>
                     <tbody>
                         <th scope="row">Nombre de sièges</th>
-                            <td><?php echo($result["CarsSeat"])?></td>
+                        <td><?php echo ($result["CarsSeat"]) ?></td>
                         </tr>
                         <th scope="row">Type de voiture</th>
-                            <td><?php echo($result["CarsType"])?></td>
+                        <td><?php echo ($result["CarsType"]) ?></td>
                         </tr>
                         <tr>
                             <th scope="row">Climatisation</th>
@@ -110,7 +92,7 @@ error_reporting(0);
                         </tr>
                         <tr>
                             <th scope="row">Bluetooth</th>
-                            <?php if ($result["CDPlayer"] == 1) {
+                            <?php if ($result["Bluetooth"] == 1) {
                             ?>
                                 <td>oui</td>
                             <?php } else { ?>
@@ -119,7 +101,7 @@ error_reporting(0);
                         </tr>
                         <tr>
                             <th scope="row">Lumière automatique</th>
-                            <?php if ($result["CDPlayer"] == 1) {
+                            <?php if ($result["AutoLight"] == 1) {
                             ?>
                                 <td>oui</td>
                             <?php } else { ?>
@@ -132,6 +114,23 @@ error_reporting(0);
         </div>
     </section>
     <!-- /Car details -->
+
+    <section class=flux>
+        <div>
+            <img src="admin/assets/images/<?php echo htmlentities($result["CarsImage1"]); ?>" class="img-responsive" alt="image" width="900" height="560">
+        </div>
+        <div>
+            <img src="admin/assets/images/<?php echo htmlentities($result["CarsImage2"]); ?>" class="img-responsive" alt="image" width="900" height="560">
+        </div>
+        <div>
+            <img src="admin/assets/images/<?php echo htmlentities($result["CarsImage3"]); ?>" class="img-responsive" alt="image" width="900" height="560">
+        </div>
+        <div>
+            <img src="admin/assets/images/<?php echo htmlentities($result["CarsImage4"]); ?>" class="img-responsive" alt="image" width="900" height="560">
+        </div>
+    </section>
+
+
     <!--/OVERVIEW-->
 
     <!-- Footer -->

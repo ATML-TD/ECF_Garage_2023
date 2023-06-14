@@ -9,14 +9,14 @@
 --  
 CREATE TABLE `admin` (
     `id` int(11) NOT NULL,
-    `UserName` varchar(100) NOT NULL,
-    `Password` varchar(100) NOT NULL
+    `username` varchar(100) NOT NULL,
+    `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 --  
 -- Dumping data for table `admin`  
 --  
 INSERT INTO `admin` (`id`, `username`, `password`) VALUES  
-(1, 'admin', 'admin'); 
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3'); 
 
 
 -- --------------------------------------------------------------------

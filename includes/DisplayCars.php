@@ -73,10 +73,10 @@ include('FilterCars.php');
 
         $('#price_range').slider({
             range: true,
-            min: 10,
-            max: 6000,
-            values: [10, 6000],
-            step: 10,
+            min: 1000,
+            max: 60000,
+            values: [1000, 60000],
+            step: 1000,
             stop: function(event, ui) {
                 $('#price_show').html(ui.values[0] + ' - ' + ui.values[1]);
                 $('#hidden_minimum_price').val(ui.values[0]);
@@ -87,10 +87,10 @@ include('FilterCars.php');
 
         $('#km_range').slider({
             range: true,
-            min: 10,
-            max: 6000,
-            values: [10, 6000],
-            step: 10,
+            min: 1000,
+            max: 60000,
+            values: [1000, 60000],
+            step: 1000,
             stop: function(event, ui) {
                 $('#km_show').html(ui.values[0] + ' - ' + ui.values[1]);
                 $('#hidden_minimum_km').val(ui.values[0]);

@@ -47,7 +47,7 @@
                                             <textarea id="message" class="form-control" rows="5" placeholder="Entrez votre message" required></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
-                                        <button type="submit" id="form-submit" class="btn btn-danger btn-lg pull-right ">Envoyer</button>
+                                        <button type="submit" id="login" class="btn btn-danger btn-lg pull-right ">Envoyer</button>
                                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                                         <div class="clearfix"></div>
                                     </form>
