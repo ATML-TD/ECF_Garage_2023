@@ -28,7 +28,7 @@
                 <i class="fa fa-car"></i> Gérer les voitures
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="includes/AddCars.php">Ajouter</a>
+                <a class="dropdown-item" href="AddCarsForm.html">Ajouter</a>
                 <a class="dropdown-item" href="#">Supprimer</a>
             </div>
         </div>

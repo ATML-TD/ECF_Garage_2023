@@ -58,11 +58,6 @@ INSERT INTO `tabcars` (`id`, `CarsName`, `CarsDescription`, `CarsPrice`, `CarsKM
 
 -- --------------------------------------------------------------------
 
-
---
--- Indexes for dumped tables
---
-
 --
 -- Indexes for table `admin`
 --
@@ -79,11 +74,6 @@ ALTER TABLE `tabcars`
 
 
 -- --------------------------------------------------------------------
-
-
---
--- AUTO_INCREMENT for dumped tables
---
 
 --
 -- AUTO_INCREMENT for table `admin`
