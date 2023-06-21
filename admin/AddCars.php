@@ -21,10 +21,10 @@ if (isset($_POST['submit_car_btn'])) {
 	$carsimage3 = $_FILES['carsimage3']['name'];
 	$carsimage4 = $_FILES['carsimage4']['name'];
 
-	move_uploaded_file($_FILES["CarsImage1"]["tmp_name"], "assets/images/" . $_FILES["CarsImage1"]["name"]);
-	move_uploaded_file($_FILES["CarsImage2"]["tmp_name"], "assets/images/" . $_FILES["CarsImage2"]["name"]);
-	move_uploaded_file($_FILES["CarsImage3"]["tmp_name"], "assets/images/" . $_FILES["CarsImage3"]["name"]);
-	move_uploaded_file($_FILES["CarsImage4"]["tmp_name"], "assets/images/" . $_FILES["CarsImage4"]["name"]);
+	move_uploaded_file($_FILES["carsimage1"]["tmp_name"], "assets/images/" . $_FILES["carsimage1"]["name"]);
+	move_uploaded_file($_FILES["carsimage2"]["tmp_name"], "assets/images/" . $_FILES["carsimage2"]["name"]);
+	move_uploaded_file($_FILES["carsimage3"]["tmp_name"], "assets/images/" . $_FILES["carsimage3"]["name"]);
+	move_uploaded_file($_FILES["carsimage4"]["tmp_name"], "assets/images/" . $_FILES["carsimage4"]["name"]);
 
 
 	$query = "INSERT INTO `tabcars`(`CarsName`,`CarsPrice`,`CarsYear`,`CarsKM`,`CarsDescription`,`CarsSeat`,`CarsType`,`CarsAC`,`Bluetooth`,`AutoLight`,`CarsImage1`,`CarsImage2`,`CarsImage3`,`CarsImage4`) VALUES(:carsname,:carsprice,:carsyear,:carskm,:carsdescription,:carsseat,:carstype,:carsac,:bluetooth,:autolight,:carsimage1,:carsimage2,:carsimage3,:carsimage4)";

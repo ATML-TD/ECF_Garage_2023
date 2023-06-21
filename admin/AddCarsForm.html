@@ -34,7 +34,7 @@
 									<div class="panel panel-default">
 
 										<div class="panel-body">
-											<form action="AddCars.php" method="post">
+											<form action="AddCars.php" method="post" enctype="multipart/form-data">
 												<div class="form-group">
 													<label for="carsname" class="col-sm-2 control-label">Nom du véhicule<span style="color:red">*</span></label>
 													<div class="col-sm-4">
@@ -83,16 +83,20 @@
 
 													<div class="form-group">
 														<div class="col-sm-4">
-															Image 1 <span style="color:red">*</span><input type="file" name="carsimage1" required>
+															Image 1 <span style="color:red">*</span>
+															<input type="file" id="carsimage1" name="carsimage1" required>
 														</div>
 														<div class="col-sm-4">
-															Image 2 <span style="color:red">*</span><input type="file" name="carsimage2" required>
+															Image 2 <span style="color:red">*</span>
+															<input type="file" id="carsimage2" name="carsimage2" required>
 														</div>
 														<div class="col-sm-4">
-															Image 3 <span style="color:red">*</span><input type="file" name="carsimage3" required>
+															Image 3 <span style="color:red">*</span>
+															<input type="file" id="carsimage3" name="carsimage3" required>
 														</div>
 														<div class="col-sm-4">
-															Image 4 <span style="color:red">*</span><input type="file" name="carsimage4" required>
+															Image 4 <span style="color:red">*</span>
+															<input type="file" id="carsimage4" name="carsimage4" required>
 														</div>
 													</div>
 												</div>
