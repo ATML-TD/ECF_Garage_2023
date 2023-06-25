@@ -17,21 +17,21 @@
 
 <body>
 
-
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <h1 class="display-1">Supprimer des véhicules</h1>
+                <h1 class="display-1">Supprimer des employés</h1>
                 <table class="table table-striped table-hover">
                     <tr>
                         <th>ID</th>
-                        <th>Nom du véhicule</th>
+                        <th>Nom employé</th>
+                        <th>Prénom employé</th>
                         <th>Modifier</th>
                     </tr>
 
                     <?php
                     include('../../includes/Config.php');
-                    $sql = "SELECT tabcars.CarsName, tabcars.id from tabcars";
+                    $sql = "SELECT employees.firstname, employees.lastname from employees";
                     $query = $pdo->prepare($sql);
                     $query->execute();
                     $results = $query->fetchAll(PDO::FETCH_OBJ);
@@ -40,9 +40,10 @@
                         foreach ($results as $result) {                ?>
                             <tr>
                                 <td><?php echo htmlentities($cnt); ?></td>
-                                <td><?php echo htmlentities($result->CarsName); ?></td>
+                                <td><?php echo htmlentities($result->firstname); ?></td>
+                                <td><?php echo htmlentities($result->lastname); ?></td>
                                 <td>
-                                    <a class="btn btn-danger my-3" href="DeleteCars.php?delete=<?php echo $result->id;?>" onclick="return confirm('Etes-vous certain de vouloir supprimer?');">Supprimer</a>
+                                    <a class="btn btn-danger my-3" href="DeleteEmployees.php?delete=<?php echo $result->id;?>" onclick="return confirm('Etes-vous certain de vouloir supprimer?');">Supprimer</a>
                                 </td>
                             </tr>
                     <?php $cnt = $cnt + 1;

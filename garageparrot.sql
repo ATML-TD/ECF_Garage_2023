@@ -67,13 +67,13 @@ VALUES
         'Lisa',
         'Smith'
     ),
-        (
-        3
-        'BobBin',
-        'ed22c07dc0d0970b6790706414eb651e',
-        'bob.bin@gmail.com',
-        'Bob',
-        'Bin'
+    (
+        3,
+        'BobbyBob',
+        'd4296b2de79044fa9022cd9d34413781',
+        'bobby.bob@gmail.com',
+        'Bobby',
+        'Bob'
     );
 
 -- --------------------------------------------------------------------

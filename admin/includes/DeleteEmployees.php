@@ -5,11 +5,11 @@ error_reporting(E_ALL);
 
 
 include('../../includes/Config.php');
-include('DeleteCarsForm.php');
+include('DeleteEmployeesForm.php');
 
 if (isset($_GET['delete'])) {
     $delid = intval($_GET['delete']);
-    $sql = "DELETE FROM tabcars where id=:delid";
+    $sql = "DELETE FROM employees where id=:delid";
     $query = $pdo->prepare($sql);
     $data = [
         ':delid' => $delid,
@@ -17,10 +17,10 @@ if (isset($_GET['delete'])) {
     $query = $query->execute($data);
 
     if ($query) {
-        $_SESSION['message'] = "Voiture supprimée";
+        $_SESSION['message'] = "Employé supprimée";
         exit(0);
     } else {
         $_SESSION['message'] = "Un problème est survenu";
         exit(0);
     }
-}
+} 
