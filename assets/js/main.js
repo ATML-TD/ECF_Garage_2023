@@ -1,3 +1,20 @@
+//List prestation admin
+function modifyPrestation() {
+    var drain = document.getElementById("drain").value;
+    var battery = document.getElementById("battery").value;
+    var engine = document.getElementById("engine").value;
+    var tires = document.getElementById("tires").value;
+    var carBody = document.getElementById("carbody").value;
+
+    localStorage.setItem("textvalue", drain);
+    localStorage.setItem("textvalue", battery);
+    localStorage.setItem("textvalue", engine);
+    localStorage.setItem("textvalue", tires);
+    localStorage.setItem("textvalue", carBody);
+
+    return false;
+}
+
 //List prestation
 
 let prestationIcon = ["fa-oil-can", "fa-car-battery", "fa-gauge-simple", "fa-truck-monster", "fa-spray-can-sparkles"]

@@ -17,39 +17,21 @@
 
 <body>
 
-    <div class="navbar">
-        <a class="homepage" href="../index.php"><i class="fa fa-fw fa-home"></i> Retour au site</a>
-        <a href="includes/Logout.php"><i class="fa fa-fw fa-user"></i> Se déconnecter</a>
-    </div>
-
-    <div class="sidenav">
-        <div class="dropdown">
-            <button class="dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-car"></i> Gérer les voitures
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="AddCarsForm.html">Ajouter</a>
-                <a class="dropdown-item" href="#">Supprimer</a>
-            </div>
-        </div>
-
-
-        <a href="#"><i class="fa fa-pen"></i> Validation commentaires</a>
-        <a href="#"><i class="fa fa-table"></i> Modifier les horaires</a>
-        <a href="#"><i class="fa fa-user"></i> Ajouter des employés</a>
-    </div>
-
+    <?php include ("includes/Navbar.php")?>
     <div class="main">
         <h2>Bienvenue Monsieur Parrot</h2>
-        <p>Ici vous pouvez gérer les voitures d'occasion,</p>
-        <p>les horaires du magasin</p>
-        <p>ainsi que vos employés</p>
+        <p>Ici vous pouvez</p>
+        <p>gérer les voitures d'occasion,</p>
+        <p>valider les commentaires des clients, </p>
+        <p>modifier les prestations du magasin</p>
+        <p>modifier les horaires du magasin</p>
+        <p>gérer vos employés</p>
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    
 </body>
 
 
