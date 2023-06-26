@@ -97,7 +97,7 @@ CREATE TABLE `tabcars` (
     `Bluetooth` int(11) DEFAULT NULL,
     `AutoLight` int(11) DEFAULT NULL,
     `status` tinyint(1) NOT NULL DEFAULT 1 COMMENT '1=Active | 0=Inactive'
-) ENGINE = InnoDB DEFAULT CHARSET = latin1;
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 
 --
 -- Dumping data for table `tabcars`
@@ -207,6 +207,32 @@ VALUES
         1
     );
 
+-- --------------------------------------------------------
+--
+-- Table structure for table `tabcomment`
+--
+CREATE TABLE `tabcomment` (
+    `id` int(11) NOT NULL,
+    `usermail` varchar(100) NOT NULL,
+    `comment` mediumtext NOT NULL
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
+
+--
+-- Dumping data for table `tabcomment`
+--
+INSERT INTO
+    `tabcomment` (
+        `id`,
+        `usermail`,
+        `comment`
+    )
+VALUES
+    (
+        1,
+        'userone@gmail.com',
+        'Super garage!'
+    );
+
 -- --------------------------------------------------------------------
 --
 -- Indexes for table `admin`
@@ -229,6 +255,14 @@ ADD
 --
 ALTER TABLE
     `tabcars`
+ADD
+    PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tabcomment`
+--
+ALTER TABLE
+    `tabcomment`
 ADD
     PRIMARY KEY (`id`);
 
@@ -259,5 +293,14 @@ ALTER TABLE
 MODIFY
     `id` int(11) NOT NULL AUTO_INCREMENT,
     AUTO_INCREMENT = 6;
+
+--
+-- AUTO_INCREMENT for table `tabcomment`
+--
+ALTER TABLE
+    `tabcomment`
+MODIFY
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 2;
 
 COMMIT;

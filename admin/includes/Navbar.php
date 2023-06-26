@@ -14,7 +14,7 @@
             </div>
         </div>
 
-        <a href="#"><i class="fa fa-pen"></i> Validation commentaires</a>
+        <a href="includes/ManageCommentsForm.php"><i class="fa fa-pen"></i> Validation commentaires</a>
         <a href="ServicesForm.php"><i class="fa fa-hammer"></i> Modifier les prestations</a>
         <a href="#"><i class="fa fa-table"></i> Modifier les horaires</a>
         <div class="dropdown">
