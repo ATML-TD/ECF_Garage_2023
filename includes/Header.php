@@ -11,6 +11,13 @@
 
             <div>
                 <li class="nav-item">
+                    <a class="nav-link" name="add_review" id="add_review" data-bs-toggle="modal" href="#add_review">Donnez votre avis!</a>
+                    <?php include('includes/SubmitCommentsForm.php');?>
+                </li>
+            </div>
+
+            <div>
+                <li class="nav-item">
                     <!-- Button trigger contact form modal -->
                     <a class="nav-link" data-bs-toggle="modal" href="#contactForm">Nous contacter</a>
                     <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="contactFormTitle" aria-hidden="true">

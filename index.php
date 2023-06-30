@@ -38,35 +38,11 @@ error_reporting(0);
         <?php include('includes/Services.php'); ?>
         <!-- Prestation -->
 
-        <p>TEST</p>
-        <div class="modal custom" id="feedbackModal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <h3>Rate your feedback</h3>
-                        <button type="button" class="close" data-dismiss="modal">
-                            <span>×</span>
-                        </button>
-                    </div>
-
-                    <div class="modal-body">
-                        <form onsubmit="return saveFeedback(this);">
-                            <div class='starrr'></div>
-
-                            <div class="form-group" style="margin-top: 10px;">
-                                <input type="text" name="feedback" class="form-control" />
-                            </div>
-
-                            <input type="submit" class="btn btn-primary pull-right" value="Submit" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Comments/Rating -->
+        <?php include('includes/DisplayComments.php'); ?>
+        <!-- Comments/Rating -->
 
     </main>
-
 
     <!-- Footer -->
     <?php include('includes/Footer.php'); ?>
