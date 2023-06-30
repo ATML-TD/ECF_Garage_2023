@@ -15,8 +15,13 @@ CREATE TABLE `admin` (
 --  
 -- Dumping data for table `admin`  
 --  
+
 INSERT INTO
-    `admin` (`id`, `username`, `password`, `email`)
+    `admin` (
+        `id`, 
+        `username`, 
+        `password`, 
+        `email`)
 VALUES
     (
         1,
@@ -214,7 +219,9 @@ VALUES
 CREATE TABLE `tabcomment` (
     `id` int(11) NOT NULL,
     `usermail` varchar(100) NOT NULL,
-    `comment` mediumtext NOT NULL
+    `comment` mediumtext NOT NULL,
+    `userrating` int(1) NOT NULL,
+    `status` tinyint(1) NOT NULL DEFAULT 0 COMMENT '1=Active | 0=Inactive'
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 
 --
@@ -224,13 +231,23 @@ INSERT INTO
     `tabcomment` (
         `id`,
         `usermail`,
-        `comment`
-    )
+        `comment`,
+        `userrating`,
+        `status`)
 VALUES
     (
         1,
         'userone@gmail.com',
-        'Super garage!'
+        'Super garage merci!',
+        5,
+        0
+    ),
+    (
+        2,
+        'userone@gmail.com',
+        'Rapide et efficace, Top!',
+        4,
+        1
     );
 
 -- --------------------------------------------------------------------
@@ -301,6 +318,6 @@ ALTER TABLE
     `tabcomment`
 MODIFY
     `id` int(11) NOT NULL AUTO_INCREMENT,
-    AUTO_INCREMENT = 2;
+    AUTO_INCREMENT = 3;
 
 COMMIT;

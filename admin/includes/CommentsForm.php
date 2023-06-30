@@ -27,9 +27,13 @@
                         <th>Mail utilisateur</th>
                         <th>Commentaire</th>
                         <th>Status</th>
+                        <th>Supprimer</th>
+                        <th>Ajouter</th>
                     </tr>
 
                     <?php
+                    ini_set('display_errors', 'on');
+                    error_reporting(E_ALL);
                     include('../../includes/Config.php');
                     $sql = "SELECT tabcomment.id, tabcomment.usermail, tabcomment.comment, tabcomment.status from tabcomment";
                     $query = $pdo->prepare($sql);
@@ -41,8 +45,12 @@
                             <tr>
                                 <td><?php echo htmlentities($result->usermail); ?></td>
                                 <td><?php echo htmlentities($result->comment); ?></td>
+                                <td><?php echo htmlentities($result->status); ?></td>
                                 <td>
-                                    <a class="btn btn-danger my-3" href="ManageComments.php?delete=<?php echo $result->id;?>" onclick="return confirm('Etes-vous certain de vouloir supprimer?');">Supprimer</a>
+                                    <a class="btn btn-danger my-3" href="DeleteComments.php?delete=<?php echo $result->id;?>" onclick="return confirm('Etes-vous certain de vouloir supprimer?');">Supprimer</a>
+                                </td>
+                                <td>
+                                    <a class="btn btn-danger my-3" href="AddComments.php?add=<?php echo $result->id;?>" onclick="return confirm('Etes-vous certain de vouloir ajouter?');">Ajouter</a>
                                 </td>
                             </tr>
                     <?php $cnt = $cnt + 1;

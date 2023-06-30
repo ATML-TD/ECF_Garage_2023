@@ -136,3 +136,17 @@ Footer
 .bg-light {
     background-color: white;
 }
+
+
+
+
+
+
+
+#feedbackModal.modal.custom .modal-dialog {
+    width: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}

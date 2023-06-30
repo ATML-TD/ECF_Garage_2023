@@ -3,12 +3,13 @@
     <div class="d-flex flex-row">
         <!-- List of tools -->
         <ul class="nav nav-underline justify-content-end text-paragraph">
-            <div class="p-2">
+            <div>
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="CarsList.php">Voitures d'occasion</a>
                 </li>
             </div>
-            <div class="p-2">
+
+            <div>
                 <li class="nav-item">
                     <!-- Button trigger contact form modal -->
                     <a class="nav-link" data-bs-toggle="modal" href="#contactForm">Nous contacter</a>
@@ -57,7 +58,7 @@
                     </div>
                 </li>
             </div>
-            <div class="p-2">
+            <div>
                 <li class="nav-item">
                     <!-- Button trigger login modal -->
                     <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#loginForm">

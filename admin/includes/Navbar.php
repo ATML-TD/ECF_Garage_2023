@@ -6,20 +6,19 @@
     <div class="sidenav">
         <div class="dropdown">
             <button class="dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-car"></i> Gérer les voitures
+                <i class="fa fa-car"></i> Voitures
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="includes/AddCarsForm.html">Ajouter</a>
                 <a class="dropdown-item" href="includes/DeleteCarsForm.php">Supprimer</a>
             </div>
         </div>
-
-        <a href="includes/ManageCommentsForm.php"><i class="fa fa-pen"></i> Validation commentaires</a>
-        <a href="ServicesForm.php"><i class="fa fa-hammer"></i> Modifier les prestations</a>
-        <a href="#"><i class="fa fa-table"></i> Modifier les horaires</a>
+        <a href="includes/CommentsForm.php"><i class="fa fa-pen"></i> Commentaires</a>
+        <a href="ServicesForm.php"><i class="fa fa-hammer"></i> Prestations</a>
+        <a href="#"><i class="fa fa-table"></i> Horaires</a>
         <div class="dropdown">
             <button class="dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-user"></i> Gérer les employés
+                <i class="fa fa-user"></i> Employés
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="includes/AddEmployeesForm.php">Ajouter</a>
