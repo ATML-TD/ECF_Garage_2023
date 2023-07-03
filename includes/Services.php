@@ -9,12 +9,24 @@
                             <i class="fas fa-oil-can me-3"></i>
                             Vidange
                         </h3>
-                        <h2>
-                            <span id="adminVidange"></span>
-                        </h2>
-                        <script>
-                            document.getElementById("adminVidange").innerHTML = localStorage.getItem("textvalue");
-                        </script>
+                        <ul>
+                            <?php
+                            ini_set('display_errors', 'on');
+                            error_reporting(E_ALL);
+                            include('includes/Config.php');
+                            $sql = "SELECT tabvidange.services from tabvidange";
+                            $query = $pdo->prepare($sql);
+                            $query->execute();
+                            $results = $query->fetchAll(PDO::FETCH_OBJ);
+                            $cnt = 1;
+                            if ($query->rowCount() > 0) {
+                                foreach ($results as $result) { ?>
+                                    <li><?php echo htmlentities($result->services); ?></li>
+
+                            <?php $cnt = $cnt + 1;
+                                }
+                            } ?>
+                        </ul>
                     </div>
                 </div>
 </section>
