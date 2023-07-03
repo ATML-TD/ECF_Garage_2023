@@ -6,13 +6,15 @@ error_reporting(E_ALL);
 include('../../includes/Config.php');
 
 if (isset($_POST['submit_services_btn'])) {
-	$services = $_POST['services'];
+	$services_type = $_POST['services_type'];
+	$services_details = $_POST['services_details'];
 	
-    $query = "INSERT INTO `tabvidange`(`services`) VALUES(:services)";
+    $query = "INSERT INTO `tabservices`(`services_type`, `services_details` ) VALUES(:services_type, :services_details)";
 	$query_run = $pdo->prepare($query);
 
 	$data = [
-		':services' => $services
+		':services_type' => $services_type,
+		':services_details' => $services_details,
 	];
 	$query_execute = $query_run->execute($data);
 	$lastInsertId = $pdo->lastInsertId();

@@ -9,7 +9,7 @@ include('DeleteServicesForm.php');
 
 if (isset($_GET['delete'])) {
     $delid = intval($_GET['delete']);
-    $sql = "DELETE FROM tabvidange where id=:delid";
+    $sql = "DELETE FROM tabservices where id=:delid";
     $query = $pdo->prepare($sql);
     $data = [
         ':delid' => $delid,

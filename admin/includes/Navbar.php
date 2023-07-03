@@ -23,7 +23,7 @@
                 <a class="dropdown-item" href="includes/DeleteServicesForm.php">Supprimer</a>
             </div>
         </div>
-        <a href="#"><i class="fa fa-table"></i> Horaires</a>
+        <a href="includes/EditOpeningForm.php"><i class="fa fa-table"></i> Horaires</a>
         <div class="dropdown">
             <button class="dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa fa-user"></i> Employés

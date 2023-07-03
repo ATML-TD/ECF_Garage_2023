@@ -36,16 +36,29 @@
 										<div class="panel-body">
 											<form action="AddServices.php" method="post" enctype="multipart/form-data">
 												<div class="form-group">
-													<label for="services" class="col-sm-2 control-label">Services<span style="color:red">*</span></label>
+													<label for="services_type" class="col-sm-2 control-label">Type de service<span style="color:red">*</span></label>
 													<div class="col-sm-4">
-														<input type="text" id="services" name="services" class="form-control" required>
-													</div>
-												<div class="form-group">
-													<div class="col-sm-8 col-sm-offset-2">
-														<button class="btn btn-default" type="reset">Annuler</button>
-														<button class="btn btn-danger" name="submit_services_btn" type="submit">Ajouter le service</button>
+														<select class="selectpicker" id="services_type" name="services_type" required>
+															<option value=""> Selectionner </option>
+															<option value="Vidange">Vidange</option>
+															<option value="Batterie">Batterie</option>
+															<option value="Moteur">Moteur</option>
+															<option value="Pneus">Pneus</option>
+															<option value="Carrosserie">Carrosserie</option>
+														</select>
 													</div>
 												</div>
+												<div class="form-group">
+													<label for="services_details" class="col-sm-2 control-label">Services<span style="color:red">*</span></label>
+													<div class="col-sm-4">
+														<input type="text" id="services_details" name="services_details" class="form-control" required>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-8 col-sm-offset-2">
+															<button class="btn btn-default" type="reset">Annuler</button>
+															<button class="btn btn-danger" name="submit_services_btn" type="submit">Ajouter le service</button>
+														</div>
+													</div>
 											</form>
 										</div>
 									</div>
@@ -63,6 +76,3 @@
 </body>
 
 </html>
-
-
-

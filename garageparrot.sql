@@ -253,33 +253,118 @@ VALUES
 
 -- --------------------------------------------------------
 --
--- Table structure for table `tabvidange`
+-- Table structure for table `tabservices`
 --
-CREATE TABLE `tabvidange` (
+CREATE TABLE `tabservices` (
     `id` int(11) NOT NULL,
-    `services` mediumtext NOT NULL
+    `services_type` varchar(100) NOT NULL,
+    `services_details` mediumtext NOT NULL
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 
 --
--- Dumping data for table `tabvidange`
+-- Dumping data for table `tabservices`
 --
 INSERT INTO
-    `tabvidange` (
+    `tabservices` (
         `id`,
-        `services`)
+        `services_type`,
+        `services_details`)
 VALUES
     (
         1,
+        'Vidange',
         'Remplacement huile moteur'
     ),
     (
         2,
+        'Vidange',
         'Remplacement filtre à huile'
     ),
     (
         3,
+        'Vidange',
         'Remplacement Bouchon vidange'
+    ),
+    (
+        4,
+        'Batterie',
+        'Remplacement batterie'
+    ),
+    (
+        5,
+        'Batterie',
+        'Remplacement démarreur'
+    ),
+    (
+        6,
+        'Moteur',
+        'Remplacement bougies'
+    ),
+    (
+        7,
+        'Moteur',
+        'Remplacement du filtre à air'
+    ),
+    (
+        8,
+        'Moteur',
+        'Remplacement injecteur'
+    ),
+    (
+        9,
+        'Pneus',
+        'Changements pneus'
+    ),
+    (
+        10,
+        'Pneus',
+        'Parallélisme'
+    ),
+    (
+        11,
+        'Pneus',
+        'Equilibrage'
+    ),
+    (
+        12,
+        'Carrosserie',
+        'Nettoyage à sec'
+    ),
+    (
+        13,
+        'Carrosserie',
+        'Peinture'
     );
+
+
+-- --------------------------------------------------------
+--
+-- Table structure for table `tabopening`
+--
+CREATE TABLE `tabopening` (
+    `id` int(11) NOT NULL,
+    `opening_week` mediumtext NOT NULL,
+    `opening_saturday` mediumtext NOT NULL,
+    `opening_sunday` mediumtext NOT NULL
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
+
+--
+-- Dumping data for table `tabopening`
+--
+INSERT INTO
+    `tabopening` (
+        `id`,
+        `opening_week`,
+        `opening_saturday`,
+        `opening_sunday`)
+VALUES
+    (
+        1,
+        'Lundi - vendredi: 8h45-12h00, 14h00-18h00',
+        'Samedi: 8h45-12h00',
+        'Fermé dimanche'
+    );
+    
 
 -- --------------------------------------------------------------------
 --
@@ -315,12 +400,22 @@ ADD
     PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tabvidange`
+-- Indexes for table `tabservices`
 --
 ALTER TABLE
-    `tabvidange`
+    `tabservices`
 ADD
     PRIMARY KEY (`id`);
+
+
+--
+-- Indexes for table `tabopening`
+--
+ALTER TABLE
+    `tabopening`
+ADD
+    PRIMARY KEY (`id`);
+
 
 -- --------------------------------------------------------------------
 --
@@ -361,12 +456,23 @@ MODIFY
 
 
 --
--- AUTO_INCREMENT for table `tabvidange`
+-- AUTO_INCREMENT for table `tabservices`
 --
 ALTER TABLE
-    `tabvidange`
+    `tabservices`
 MODIFY
     `id` int(11) NOT NULL AUTO_INCREMENT,
-    AUTO_INCREMENT = 4;
+    AUTO_INCREMENT = 14;
+
+
+--
+-- AUTO_INCREMENT for table `tabopening`
+--
+ALTER TABLE
+    `tabopening`
+MODIFY
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 2;
+
 
 COMMIT;

@@ -20,9 +20,24 @@
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                     <h6 class="text-uppercase fw-bold mb-4 title">Horaires</h6>
                     <ui class="text-paragraph">
-                        <li>Lundi - vendredi: 8h45-12h00, 14h00-18h00</li>
-                        <li>Samedi: 8h45-12h00</li>
-                        <li>Fermé dimanche</li>
+                        <?php
+                        ini_set('display_errors', 'on');
+                        error_reporting(E_ALL);
+                        include('includes/Config.php');
+                        $sql = "SELECT tabopening.opening_week, tabopening.opening_saturday, tabopening.opening_sunday FROM tabopening WHERE id=1";
+                        $query = $pdo->prepare($sql);
+                        $query->execute();
+                        $results = $query->fetchAll(PDO::FETCH_OBJ);
+                        $cnt = 1;
+                        if ($query->rowCount() > 0) {
+                            foreach ($results as $result) { ?>
+                                <li><?php echo htmlentities($result->opening_week); ?></li>
+                                <li><?php echo htmlentities($result->opening_saturday); ?></li>
+                                <li><?php echo htmlentities($result->opening_sunday); ?></li>
+
+                        <?php $cnt = $cnt + 1;
+                            }
+                        } ?>
                     </ui>
                 </div>
 

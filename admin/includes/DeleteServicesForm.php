@@ -24,13 +24,14 @@
                 <table class="table table-striped table-hover">
                     <tr>
                         <th>ID</th>
+                        <th>Type de prestation</th>
                         <th>Prestation</th>
                         <th>Supprimer</th>
                     </tr>
 
                     <?php
                     include('../../includes/Config.php');
-                    $sql = "SELECT * from tabvidange";
+                    $sql = "SELECT * from tabservices";
                     $query = $pdo->prepare($sql);
                     $query->execute();
                     $results = $query->fetchAll(PDO::FETCH_OBJ);
@@ -39,7 +40,8 @@
                         foreach ($results as $result) { ?>
                             <tr>
                                 <td><?php echo htmlentities($cnt); ?></td>
-                                <td><?php echo htmlentities($result->services); ?></td>
+                                <td><?php echo htmlentities($result->services_type); ?></td>
+                                <td><?php echo htmlentities($result->services_details); ?></td>
                                 <td>
                                     <a class="btn btn-danger my-3" href="DeleteServices.php?delete=<?php echo $result->id;?>" onclick="return confirm('Etes-vous certain de vouloir supprimer?');">Supprimer</a>
                                 </td>
