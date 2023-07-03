@@ -14,7 +14,15 @@
             </div>
         </div>
         <a href="includes/CommentsForm.php"><i class="fa fa-pen"></i> Commentaires</a>
-        <a href="ServicesForm.php"><i class="fa fa-hammer"></i> Prestations</a>
+        <div class="dropdown">
+            <button class="dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-user"></i> Prestations
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="includes/AddServicesForm.php">Ajouter</a>
+                <a class="dropdown-item" href="includes/DeleteServicesForm.php">Supprimer</a>
+            </div>
+        </div>
         <a href="#"><i class="fa fa-table"></i> Horaires</a>
         <div class="dropdown">
             <button class="dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">

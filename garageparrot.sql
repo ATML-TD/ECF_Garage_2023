@@ -250,6 +250,37 @@ VALUES
         1
     );
 
+
+-- --------------------------------------------------------
+--
+-- Table structure for table `tabvidange`
+--
+CREATE TABLE `tabvidange` (
+    `id` int(11) NOT NULL,
+    `services` mediumtext NOT NULL
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
+
+--
+-- Dumping data for table `tabvidange`
+--
+INSERT INTO
+    `tabvidange` (
+        `id`,
+        `services`)
+VALUES
+    (
+        1,
+        'Remplacement huile moteur'
+    ),
+    (
+        2,
+        'Remplacement filtre à huile'
+    ),
+    (
+        3,
+        'Remplacement Bouchon vidange'
+    );
+
 -- --------------------------------------------------------------------
 --
 -- Indexes for table `admin`
@@ -280,6 +311,14 @@ ADD
 --
 ALTER TABLE
     `tabcomment`
+ADD
+    PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tabvidange`
+--
+ALTER TABLE
+    `tabvidange`
 ADD
     PRIMARY KEY (`id`);
 
@@ -319,5 +358,15 @@ ALTER TABLE
 MODIFY
     `id` int(11) NOT NULL AUTO_INCREMENT,
     AUTO_INCREMENT = 3;
+
+
+--
+-- AUTO_INCREMENT for table `tabvidange`
+--
+ALTER TABLE
+    `tabvidange`
+MODIFY
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 4;
 
 COMMIT;
