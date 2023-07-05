@@ -2,6 +2,12 @@
 -- Database: `garageparrot`
 --
 -- --------------------------------------------------------------------
+
+CREATE DATABASE garageparrot;
+
+USE garageparrot;
+
+-- --------------------------------------------------------------------
 --  
 -- Table structure for table `admin`  
 --  

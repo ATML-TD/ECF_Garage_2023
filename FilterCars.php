@@ -30,26 +30,22 @@ if (isset($_POST["action"])) {
     if ($total_row > 0) {
         foreach ($result as $row) {
             $output .= '
-    <div class="col-sm-4 col-lg-3 col-md-3">
-        <div class="product-grid">
-            <div class="product-content">
-                <div class="card" style="width: 20rem;">
-                    <img src="admin/assets/images/' . $row['CarsImage1'] . '" class="img-responsive" alt="Image"/>
-                    <h3 class="title">' . $row['CarsName'] . '</h3>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <i class="fas fa-euro-sign"></i>' . $row['CarsPrice'] . '
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-calendar"></i>' . $row['CarsYear'] . '
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-car"></i>' . $row['CarsKM'] . '
-                        </li>
-                    </ul>
-                    <a href="CarsOverview.php?id=' . $row['id'] . '"class="btn btn-danger">Voir détails</a>
-                </div>
-            </div>
+    <div class="col-sm-12 col-lg-4 col-md-4 mb-5">
+        <div class="card" style="width: 20rem;">
+            <img src="admin/assets/images/' . $row['CarsImage1'] . '" alt="Image"/>
+            <h3 class="title mt-3">' . $row['CarsName'] . '</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <i class="fas fa-euro-sign"></i> ' . $row['CarsPrice'] . '
+                </li>
+                <li class="list-group-item">
+                    <i class="fas fa-calendar"></i> ' . $row['CarsYear'] . '
+                </li>
+                <li class="list-group-item">
+                    <i class="fas fa-car"></i> ' . $row['CarsKM'] . '
+                </li>
+            </ul>
+            <a href="CarsOverview.php?id=' . $row['id'] . '"class="btn btn-danger">Voir détails</a>
         </div>
     </div>';
 

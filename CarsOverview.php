@@ -38,8 +38,8 @@ error_reporting(0);
 
     <!-- Car details -->
     <section class="flux">
-        <h2><?php echo htmlentities($result["CarsName"]); ?></h2>
-        <div class="container">
+        <h2 class="mt-5 mb-5"><?php echo htmlentities($result["CarsName"]); ?></h2>
+        <div class="container mb-5">
             <div class="row">
                 <div class="col">
                     <i class="fas fa-euro-sign"></i>
@@ -62,7 +62,7 @@ error_reporting(0);
                 <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Acessoires</button>
             </div>
         </nav>
-        <div class="tab-content" id="nav-tabContent">
+        <div class="tab-content mb-5" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <p class=text-paragraph><?php echo htmlentities($result["CarsDescription"]); ?></p>
             </div>
@@ -115,17 +115,17 @@ error_reporting(0);
     </section>
     <!-- /Car details -->
 
-    <section class=flux>
-        <div>
+    <section class="flux mt-5">
+        <div class="mb-5">
             <img src="admin/assets/images/<?php echo htmlentities($result["CarsImage1"]); ?>" class="img-responsive" alt="image" width="900" height="560">
         </div>
-        <div>
+        <div class="mb-5">
             <img src="admin/assets/images/<?php echo htmlentities($result["CarsImage2"]); ?>" class="img-responsive" alt="image" width="900" height="560">
         </div>
-        <div>
+        <div class="mb-5">
             <img src="admin/assets/images/<?php echo htmlentities($result["CarsImage3"]); ?>" class="img-responsive" alt="image" width="900" height="560">
         </div>
-        <div>
+        <div class="mb-5">
             <img src="admin/assets/images/<?php echo htmlentities($result["CarsImage4"]); ?>" class="img-responsive" alt="image" width="900" height="560">
         </div>
     </section>

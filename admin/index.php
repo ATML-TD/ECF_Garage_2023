@@ -19,7 +19,7 @@
 
     <?php include ("includes/Navbar.php")?>
     <div class="main">
-        <h2>Bienvenue Monsieur Parrot</h2>
+        <h2 class="mt-5 mb-5">Bienvenue Monsieur Parrot</h2>
         <p>Ici vous pouvez</p>
         <p>gérer les voitures d'occasion,</p>
         <p>valider les commentaires des clients, </p>

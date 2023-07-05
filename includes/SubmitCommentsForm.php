@@ -1,11 +1,8 @@
-<div id="review_modal" class="modal" tabindex="-1" role="dialog">
+<div id="review_modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title">Laissez un commentaire</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
 			</div>
 			<div class="modal-body">
 				<h4 class="text-center mt-2 mb-4">
@@ -15,14 +12,14 @@
 					<i class="fas fa-star star-light submit_star mr-1" id="submit_star_4" data-rating="4"></i>
 					<i class="fas fa-star star-light submit_star mr-1" id="submit_star_5" data-rating="5"></i>
 				</h4>
-				<div class="form-group">
+				<div class="form-group mb-3">
 					<input type="text" name="usermail" id="usermail" class="form-control" placeholder="Entrez votre email" />
 				</div>
 				<div class="form-group">
 					<textarea name="comment" id="comment" class="form-control" placeholder="Ecrivez votre commentaire"></textarea>
 				</div>
 				<div class="form-group text-center mt-4">
-					<button type="button" class="btn btn-primary" id="save_review">Submit</button>
+					<button type="button" class="btn btn-danger" id="save_review">Submit</button>
 				</div>
 			</div>
 		</div>
