@@ -1,0 +1,95 @@
+/* Head navbar */
+
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #aa0404;
+}
+
+.navbar a:hover {
+    background-color: #aa0404;
+    color: white;
+}
+
+.active {
+    background-color: #aa0404;
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+/* Side navbar */
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    background-color: #555;
+    overflow-x: hidden;
+    padding-top: 80px;
+    z-index: 1000;
+    left: 0;
+    top: 0
+}
+
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+.dropdown-item:link, .dropdown-item:hover {
+    background-color: lightgrey;
+}
+
+
+/* Main content */
+.main {
+    margin-left: 250px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* logo homepage */
+.homepage {
+    margin-left: 250px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}

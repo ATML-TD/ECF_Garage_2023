@@ -17,59 +17,44 @@
 
 
 <body>
-
-
-    <div class=main>
-        <div class="ts-main-content">
-            <div class="content-wrapper">
-                <div class="container-fluid">
-
-                    <div class="row">
-                        <div class="col-md-12">
-
-                            <h2 class="page-title">Modifier les horaires</h2>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="panel panel-default">
-
-                                        <div class="panel-body">
-                                            <form action="EditOpening.php" method="post" enctype="multipart/form-data">
-                                                <div class="form-group">
-                                                    <label for="opening_week" class="col-sm-2 control-label">En semaine<span style="color:red">*</span></label>
-                                                    <div class="col-sm-4">
-                                                        <input type="text" id="opening_week" name="opening_week" class="form-control" required>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="opening_saturday" class="col-sm-2 control-label">Samedi<span style="color:red">*</span></label>
-                                                    <div class="col-sm-4">
-                                                        <input type="text" id="opening_saturday" name="opening_saturday" class="form-control" required>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="opening_sunday" class="col-sm-2 control-label">Dimanche<span style="color:red">*</span></label>
-                                                    <div class="col-sm-4">
-                                                        <input type="text" id="opening_sunday" name="opening_sunday" class="form-control" required>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="col-sm-8 col-sm-offset-2">
-                                                        <button class="btn btn-default" type="reset">Annuler</button>
-                                                        <button class="btn btn-danger" name="submit_opening_btn" type="submit">Ajouter le service</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
+    <div class="container flux">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="title">Modifier les horaires</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form action="EditOpening.php" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="opening_week" class="col-sm-2 control-label mb-3">En semaine<span style="color:red">*</span></label>
+                                <div class="col-sm-4 mb-3">
+                                    <input type="text" id="opening_week" name="opening_week" class="form-control" required>
                                 </div>
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <label for="opening_saturday" class="col-sm-2 control-label mb-3">Samedi<span style="color:red">*</span></label>
+                                <div class="col-sm-4 mb-3">
+                                    <input type="text" id="opening_saturday" name="opening_saturday" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="opening_sunday" class="col-sm-2 control-label mb-3">Dimanche<span style="color:red">*</span></label>
+                                <div class="col-sm-4 mb-3">
+                                    <input type="text" id="opening_sunday" name="opening_sunday" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-8 col-sm-offset-2 mb-3">
+                                    <button class="btn btn-default mt-3" type="reset">Annuler</button>
+                                    <button class="btn btn-danger mt-3" name="submit_opening_btn" type="submit">Ajouter le service</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 

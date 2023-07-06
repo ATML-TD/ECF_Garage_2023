@@ -17,54 +17,38 @@
 
 
 <body>
-
-
-	<div class=main>
-		<div class="ts-main-content">
-			<div class="content-wrapper">
-				<div class="container-fluid">
-
-					<div class="row">
-						<div class="col-md-12">
-
-							<h2 class="page-title">Ajouter un employé</h2>
-
-							<div class="row">
-								<div class="col-md-12">
-									<div class="panel panel-default">
-
-										<div class="panel-body">
-											<form action="AddEmployees.php" method="post" enctype="multipart/form-data">
-												<div class="form-group">
-													<label for="username" class="col-sm-2 control-label">Identifiant<span style="color:red">*</span></label>
-													<div class="col-sm-4">
-														<input type="text" id="username" name="username" class="form-control" required>
-													</div>
-													<label for="email" class="col-sm-2 control-label">Email<span style="color:red">*</span></label>
-													<div class="col-sm-4">
-														<input type="text" id="email" name="email" class="form-control" required>
-													</div>
-													<label for="firstname" class="col-sm-2 control-label">Prénom<span style="color:red">*</span></label>
-													<div class="col-sm-4">
-														<input type="text" id="firstname" name="firstname" class="form-control" required>
-													</div>
-													<label for="lastname" class="col-sm-2 control-label">Nom de famille<span style="color:red">*</span></label>
-													<div class="col-sm-4">
-														<input type="text" id="lastname" name="lastname" class="form-control" required>
-													</div>
-												</div>
-												<div class="form-group">
-													<div class="col-sm-8 col-sm-offset-2">
-														<button class="btn btn-default" type="reset">Annuler</button>
-														<button class="btn btn-danger" name="submit_employee_btn" type="submit">Ajouter l'employé</button>
-													</div>
-												</div>
-											</form>
-										</div>
-									</div>
+	<div class="container flux">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="title">Ajouter un employé</h2>
+				<div class="row">
+					<div class="col-md-12">
+						<form action="AddEmployees.php" method="post" enctype="multipart/form-data">
+							<div class="form-group">
+								<label for="username" class="col-sm-2 control-label mb-3">Identifiant<span style="color:red">*</span></label>
+								<div class="col-sm-4 mb-3">
+									<input type="text" id="username" name="username" class="form-control" required>
+								</div>
+								<label for="email" class="col-sm-2 control-label mb-3">Email<span style="color:red">*</span></label>
+								<div class="col-sm-4 mb-3">
+									<input type="text" id="email" name="email" class="form-control" required>
+								</div>
+								<label for="firstname" class="col-sm-2 control-label mb-3">Prénom<span style="color:red">*</span></label>
+								<div class="col-sm-4 mb-3">
+									<input type="text" id="firstname" name="firstname" class="form-control" required>
+								</div>
+								<label for="lastname" class="col-sm-2 control-label mb-3">Nom de famille<span style="color:red">*</span></label>
+								<div class="col-sm-4 mb-3">
+									<input type="text" id="lastname" name="lastname" class="form-control" required>
 								</div>
 							</div>
-						</div>
+							<div class="form-group">
+								<div class="col-sm-8 col-sm-offset-2 mb-3">
+									<button class="btn btn-default mt-3" type="reset">Annuler</button>
+									<button class="btn btn-danger mt-3" name="submit_employee_btn" type="submit">Ajouter l'employé</button>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -76,6 +60,3 @@
 </body>
 
 </html>
-
-
-
