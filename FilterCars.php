@@ -30,8 +30,8 @@ if (isset($_POST["action"])) {
     if ($total_row > 0) {
         foreach ($result as $row) {
             $output .= '
-    <div class="col-sm-12 col-lg-4 col-md-4">
-        <div class="card mb-5 mr-5" style="width: 20rem;">
+    <div class="col-sm-12 col-lg-6 col-md-4">
+        <div class="card mb-5 mr-5 ml-5" style="width: 20rem;">
             <img src="admin/assets/images/' . $row['CarsImage1'] . '" alt="Image"/>
             <h3 class="title mt-3">' . $row['CarsName'] . '</h3>
             <ul class="list-group list-group-flush">

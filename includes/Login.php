@@ -1,5 +1,4 @@
 <?php
-session_start();
 include("includes/Config.php");
 
 if(isset($_POST['login']))
