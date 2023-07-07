@@ -9,9 +9,9 @@ include('FilterCars.php');
     <div class="row">
         <div class="col-md-4 mb-5">
             <h3>Prix en euros</h3>
-            <input type="hidden" id="hidden_minimum_price" value="0" />
-            <input type="hidden" id="hidden_maximum_price" value="6000" />
-            <p id="price_show">10-6000</p>
+            <input type="hidden" id="hidden_minimum_price" value="1000" />
+            <input type="hidden" id="hidden_maximum_price" value="50000" />
+            <p id="price_show">1000-50000</p>
             <div id="price_range"></div>
         </div>
         <div class="col-md-4 mb-5">
@@ -74,8 +74,8 @@ include('FilterCars.php');
         $('#price_range').slider({
             range: true,
             min: 1000,
-            max: 60000,
-            values: [1000, 60000],
+            max: 50000,
+            values: [1000, 50000],
             step: 1000,
             stop: function(event, ui) {
                 $('#price_show').html(ui.values[0] + ' - ' + ui.values[1]);
