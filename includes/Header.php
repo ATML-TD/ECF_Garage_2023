@@ -20,7 +20,7 @@
 
                 <div>
                     <li class="nav-item">
-                        <a class="nav-link" name="add_review" id="add_review" data-bs-toggle="modal" href="#add_review">Donnez votre avis!</a>
+                        <a class="nav-link" name="addReview" id="addReview" data-bs-toggle="modal" href="#review_modal">Donnez votre avis!</a>
                         <?php include('includes/SubmitCommentsForm.php'); ?>
                     </li>
                 </div>

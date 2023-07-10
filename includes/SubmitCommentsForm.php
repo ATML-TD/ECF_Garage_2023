@@ -2,7 +2,7 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title">Laissez un commentaire</h5>
+				<h5 class="modal-title text-paragraph">Laissez un commentaire</h5>
 			</div>
 			<div class="modal-body">
 				<h4 class="text-center mt-2 mb-4">
@@ -29,7 +29,7 @@
 
 <script>
 var rating_data = 0;
-    $('#add_review').click(function(){
+    $('#addReview').click(function(){
         $('#review_modal').modal('show');
     });
     $(document).on('mouseenter', '.submit_star', function(){
