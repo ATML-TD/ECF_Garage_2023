@@ -19,7 +19,7 @@
 					<textarea name="comment" id="comment" class="form-control" placeholder="Ecrivez votre commentaire"></textarea>
 				</div>
 				<div class="form-group text-center mt-4">
-					<button type="button" class="btn btn-danger" id="save_review">Submit</button>
+					<button type="button" class="btn btn-danger" id="save_review">Envoyer</button>
 				</div>
 			</div>
 		</div>

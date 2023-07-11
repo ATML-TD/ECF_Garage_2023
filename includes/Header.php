@@ -55,7 +55,7 @@
                                                 </div>
                                                 <div class="text-paragraph form-group col-sm-6 mb-3">
                                                     <label for="number" class="h4">Numéro</label>
-                                                    <input type="text" class="form-control" id="number" placeholder="Entrez votre email" required>
+                                                    <input type="text" class="form-control" id="number" placeholder="Entrez votre numéro" required>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
@@ -85,7 +85,7 @@
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title text-paragraph" id="loginFormTitle">Login</h5>
+                                        <h5 class="modal-title text-paragraph" id="loginFormTitle">S'identifier</h5>
                                     </div>
                                     <div class="modal-body">
                                         <?php
@@ -94,13 +94,13 @@
                                         }
                                         ?>
                                         <form method="post">
-                                            <label>Username</label>
+                                            <label>Identifiant</label>
                                             <input type="text" name="username" class="text-paragraph form-control" />
                                             <br />
-                                            <label>Password</label>
+                                            <label>Mot de passe</label>
                                             <input type="password" name="password" class="text-paragraph form-control" />
                                             <br />
-                                            <input type="submit" name="login" class="btn btn-danger" value="Login" />
+                                            <input type="submit" name="login" class="btn btn-danger" value="S'identifier" />
                                         </form>
                                     </div>
                                 </div>
