@@ -12,12 +12,15 @@
         <!-- List of links -->
         <div class="collapse navbar-collapse" id="navbarButtonsExample">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-paragraph">
+                
+                <!-- View cars -->
                 <div>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="CarsList.php">Voitures d'occasion</a>
                     </li>
                 </div>
 
+                <!-- Comments -->
                 <div>
                     <li class="nav-item">
                         <a class="nav-link" name="addReview" id="addReview" data-bs-toggle="modal" href="#review_modal">Donnez votre avis!</a>
@@ -25,6 +28,7 @@
                     </li>
                 </div>
 
+                <!-- Contact -->
                 <div>
                     <li class="nav-item">
                         <!-- Button trigger contact form modal -->
@@ -74,6 +78,8 @@
                         </div>
                     </li>
                 </div>
+                
+                <!-- Login -->
                 <div>
                     <li class="nav-item">
                         <!-- Button trigger login modal -->

@@ -1,7 +1,8 @@
 <?php
 session_start();
 include('includes/Config.php');
-error_reporting(0);
+ini_set('display_errors', 'on');
+error_reporting(E_ALL);
 
 ?>
 
@@ -36,6 +37,9 @@ error_reporting(0);
     $result = $query->fetch();
     ?>
 
+
+
+
     <!-- Car details -->
     <section class="flux">
         <h2 class="mt-5 mb-5"><?php echo htmlentities($result["CarsName"]); ?></h2>
@@ -53,6 +57,45 @@ error_reporting(0);
                     <i class="fas fa-car"></i>
                     <h5><?php echo htmlentities($result["CarsKM"]); ?></h5>
                 </div>
+
+                <!-- Contact -->
+                <div class="col">
+                    <a class="nav-link" data-bs-toggle="modal" href="#contactFormCar"><i class="fa-solid fa-envelope" style="color: #c20505"></i></a>
+                    <li class="nav-item">
+                        <!-- Button trigger contact form modal -->
+                        <div class="modal fade" id="contactFormCar" tabindex="-1" role="dialog" aria-labelledby="contactFormCarTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-paragraph" id="contactFormCarTitle">Quel est votre message?</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form" id="contactFormCar" data-toggle="validator" class="shake">
+                                            <div class="row">
+                                                <div class="text-paragraph form-group col-sm-6 mb-3">
+                                                    <div class="text-paragraph form-group col-sm-6 mb-3">
+                                                        <label for="email" class="h4">Email</label>
+                                                        <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                    <div class="text-paragraph form-group">
+                                                        <label for="message" class="h4  mb-3">Message</label>
+                                                        <textarea id="message" class="form-control" rows="5" placeholder="Bonjour, j'aimerais plus d'informations concernant : <?php echo htmlentities($result["CarsName"]); ?> à <?php echo htmlentities($result["CarsPrice"]); ?> euros et coûtant <?php echo htmlentities($result["CarsYear"]); ?>" required></textarea>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                    <button type="submit" id="login" class="mt-5 btn btn-danger btn-lg pull-right ">Envoyer</button>
+                                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                                    <div class="clearfix"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+
+
             </div>
         </div>
 
@@ -64,7 +107,7 @@ error_reporting(0);
         </nav>
         <div class="tab-content mb-5" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <p class=text-paragraph><?php echo htmlentities($result["CarsDescription"]); ?></p>
+                <p class="text-paragraph"><?php echo htmlentities($result["CarsDescription"]); ?></p>
             </div>
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <table class="table">
