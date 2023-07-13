@@ -40,6 +40,7 @@
                                         <h5 class="modal-title text-paragraph" id="contactFormTitle">Quel est votre message?</h5>
                                     </div>
                                     <div class="modal-body">
+                                        <p class="statusMsg"></p>
                                         <form role="form" id="contactForm" data-toggle="validator" class="shake">
                                             <div class="row">
                                                 <div class="text-paragraph form-group col-sm-6 mb-3">
@@ -68,9 +69,7 @@
                                                 <textarea id="message" class="form-control" rows="5" placeholder="Entrez votre message" required></textarea>
                                                 <div class="help-block with-errors"></div>
                                             </div>
-                                            <button type="submit" id="login" class="mt-5 btn btn-danger btn-lg pull-right ">Envoyer</button>
-                                            <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                            <div class="clearfix"></div>
+                                            <button type="button" class="mt-5 btn btn-danger btn-lg pull-right submitBtn" onclick="submitContactForm()">Envoyer</button>
                                         </form>
                                     </div>
                                 </div>
