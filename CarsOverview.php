@@ -62,8 +62,8 @@ error_reporting(E_ALL);
                 <div class="col">
                     <a class="nav-link" data-bs-toggle="modal" href="#contactFormCar"><i class="fa-solid fa-envelope" style="color: #c20505"></i></a>
                     <!-- Button trigger contact form modal -->
-                    <div class="modal fade" id="contactFormCar" tabindex="-1" role="dialog" aria-labelledby="contactFormCarTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal fade show" id="contactFormCar" tabindex="-1" role="dialog" aria-labelledby="contactFormCarTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title text-paragraph" id="contactFormCarTitle">Quel est votre message?</h5>
@@ -71,14 +71,14 @@ error_reporting(E_ALL);
                                 <div class="modal-body">
                                     <form role="form" id="contactFormCar" data-toggle="validator" class="shake">
                                         <div class="row">
-                                            <div class="text-paragraph form-group col-sm-6 mb-3">
-                                                <div class="text-paragraph form-group col-sm-6 mb-3">
+                                            <div class="text-paragraph form-group mb-3">
+                                                <div class="text-paragraph form-group mb-3">
                                                     <label for="email" class="h4">Email</label>
                                                     <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
                                                 <div class="text-paragraph form-group">
-                                                    <label for="message" class="h4  mb-3">Message</label>
+                                                    <label for="message" class="h4 mb-3">Message</label>
                                                     <textarea id="message" class="form-control" rows="5" placeholder="Bonjour, j'aimerais plus d'informations concernant : <?php echo htmlentities($result["CarsName"]); ?> à <?php echo htmlentities($result["CarsPrice"]); ?> euros et coûtant <?php echo htmlentities($result["CarsYear"]); ?>" required></textarea>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
