@@ -1,0 +1,26 @@
+0000000000000000000000000000000000000000 e378a25d37371f47d0ea6ebef752b6c07ff428af root <root@aliciatd-VirtualBox.(none)> 1687178421 +0200	clone: from https://github.com/ATML-TD/ECF_Garage_2023.git
+e378a25d37371f47d0ea6ebef752b6c07ff428af c4d1a5496cac5edc2eff8c92a353b78de302fae2 ATML-TD <alicia.trandien@gmail.com> 1687181221 +0200	commit: Admin add cars function
+c4d1a5496cac5edc2eff8c92a353b78de302fae2 4114d6d0278dc3d00a95f2e714e14197c83a0195 ATML-TD <alicia.trandien@gmail.com> 1687284334 +0200	commit: Fixed part one AddCars admin bug
+4114d6d0278dc3d00a95f2e714e14197c83a0195 cad2b7bfcf6963c012c65a185d85d9d728c2176c ATML-TD <alicia.trandien@gmail.com> 1687352638 +0200	commit: Fix bug upload image admin
+cad2b7bfcf6963c012c65a185d85d9d728c2176c d369e20c8e61034366bbe8ccaf3aa0684ba8de42 ATML-TD <alicia.trandien@gmail.com> 1687697582 +0200	commit: Delete car and new DB
+d369e20c8e61034366bbe8ccaf3aa0684ba8de42 7d315cad4b629e14962e8211e220a969a2731e45 ATML-TD <alicia.trandien@gmail.com> 1687716043 +0200	commit: Add/Delete employee function
+7d315cad4b629e14962e8211e220a969a2731e45 65d9f50dd1fab36f1d4af48991f2596a37eb8675 ATML-TD <alicia.trandien@gmail.com> 1687801951 +0200	commit: Manage Comment admin
+65d9f50dd1fab36f1d4af48991f2596a37eb8675 56829cdefad1220b2981f7b7a5e75c8a39b67346 ATML-TD <alicia.trandien@gmail.com> 1688116435 +0200	commit: Added system rating
+56829cdefad1220b2981f7b7a5e75c8a39b67346 62a5ccf330dffe1bf5a8f8220e969e80e9b6db20 ATML-TD <alicia.trandien@gmail.com> 1688145262 +0200	commit: Display comment and rating
+62a5ccf330dffe1bf5a8f8220e969e80e9b6db20 7a1a920ceb3d088dcdfe611f8c34ec17f72353c3 ATML-TD <alicia.trandien@gmail.com> 1688369476 +0200	commit: Fix Display comments
+7a1a920ceb3d088dcdfe611f8c34ec17f72353c3 9aff144ed6ac976e34da078e61b66ee5852c0786 ATML-TD <alicia.trandien@gmail.com> 1688402240 +0200	commit: Manage Services admin
+9aff144ed6ac976e34da078e61b66ee5852c0786 6893d2941713ebab1ab0b3f56d5eeec40db14ac3 ATML-TD <alicia.trandien@gmail.com> 1688402934 +0200	commit: Display Services Vidange
+6893d2941713ebab1ab0b3f56d5eeec40db14ac3 aad50d25858eeb158947d519522c83161e39c496 ATML-TD <alicia.trandien@gmail.com> 1688413836 +0200	commit: Add other services and Edit Opening hours
+aad50d25858eeb158947d519522c83161e39c496 811d7abad0944c2e5ed9685be5526592f9d9bf87 ATML-TD <alicia.trandien@gmail.com> 1688583032 +0200	commit: Front Shaping
+811d7abad0944c2e5ed9685be5526592f9d9bf87 e3dafbbba3c28cd09c72c740b27d2756d9cfdf62 ATML-TD <alicia.trandien@gmail.com> 1688660869 +0200	commit: admin front shaping and employee managing added
+e3dafbbba3c28cd09c72c740b27d2756d9cfdf62 17c93e71a00f19a88be41467d02b16f7347919d4 ATML-TD <alicia.trandien@gmail.com> 1688721290 +0200	commit: Fix bug filter cars
+17c93e71a00f19a88be41467d02b16f7347919d4 02b12e45b7acf55af7c191b94d9ba6e301425818 ATML-TD <alicia.trandien@gmail.com> 1688726116 +0200	commit: Fix filter again
+02b12e45b7acf55af7c191b94d9ba6e301425818 343c8ffafd6f7c57652ec8bf2a291dfc05ac0749 ATML-TD <alicia.trandien@gmail.com> 1688730447 +0200	commit: Fix hover link color
+343c8ffafd6f7c57652ec8bf2a291dfc05ac0749 39aa90b2c479035c4e5544465cdfbb54915dfa6a ATML-TD <alicia.trandien@gmail.com> 1689014198 +0200	commit: Fixed link add comment
+39aa90b2c479035c4e5544465cdfbb54915dfa6a a95d4df82f6d2b1ebd43151a1a87e3e90a866d0f ATML-TD <alicia.trandien@gmail.com> 1689066059 +0200	commit: Syntax correction
+a95d4df82f6d2b1ebd43151a1a87e3e90a866d0f 4dce7c73a50d82b259428af5c13b2bd82a690790 ATML-TD <alicia.trandien@gmail.com> 1689078962 +0200	commit: Added button to send message regarding specific car
+4dce7c73a50d82b259428af5c13b2bd82a690790 4a8a6f697ae85c6c3dd5b4466850ef3bbb570ecf ATML-TD <alicia.trandien@gmail.com> 1689087257 +0200	commit: Fix dot problem
+4a8a6f697ae85c6c3dd5b4466850ef3bbb570ecf 855198ce215766b796620ce5343793f8b19e2469 ATML-TD <alicia.trandien@gmail.com> 1689188171 +0200	commit: Adapt for heroku
+855198ce215766b796620ce5343793f8b19e2469 5fbbedf1521fe2f92eb810db93dbe857152dde1c ATML-TD <alicia.trandien@gmail.com> 1689189445 +0200	commit (merge): Fix database connection
+5fbbedf1521fe2f92eb810db93dbe857152dde1c 393b2bbdc77a8fecb2cb4b9f9af5a384860d6597 ATML-TD <alicia.trandien@gmail.com> 1689189599 +0200	commit: Fix git version
+393b2bbdc77a8fecb2cb4b9f9af5a384860d6597 f17a9cf69a004d932e0fce27d27a9f77d6b211da ATML-TD <alicia.trandien@gmail.com> 1689264721 +0200	commit: Fix message bug
