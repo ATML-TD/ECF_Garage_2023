@@ -18,6 +18,9 @@
 <body>
 
     <div class="container mt-5">
+        <div class="navbar">
+			<a class="homepage" href="../index.php"><i class="fa fa-fw fa-home"></i> Retour</a>
+		</div>
         <div class="row justify-content-center">
             <div class="col-md-12 col-sm-6">
                 <h1 class="title">Supprimer des prestations</h1>

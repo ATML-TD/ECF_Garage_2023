@@ -18,6 +18,10 @@
 
 <body>
 	<div class="container flux">
+		<div class="navbar">
+			<a class="homepage" href="../index.php"><i class="fa fa-fw fa-home"></i> Retour</a>
+		</div>
+
 		<div class="row">
 			<div class="col-md-12">
 				<h2 class="title">Ajouter un employé</h2>

@@ -1,4 +1,8 @@
 <form action="../../includes/Services.php">
+
+    <div class="navbar">
+		<a class="homepage" href="../index.php"><i class="fa fa-fw fa-home"></i> Retour</a>
+	</div>
     <h2>Modifier les prestations</h2>
     <label for="drain" class="col-sm-2 control-label">Vidange<span style="color:red">*</span></label>
     <div class="col-sm-4">
